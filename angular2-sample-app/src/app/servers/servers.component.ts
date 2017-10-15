@@ -11,7 +11,7 @@ export class ServersComponent {
     serverName: string;
     isButtonClicked: boolean;
     serverCreateStatus: string;
-    servers: string[];
+    servers: Array<string>;
 
     constructor() {
         this.isButtonActive = false;
@@ -29,7 +29,8 @@ export class ServersComponent {
         this.serverName = event.target.value;
     }
 
-    onButtonClick() {
+    onButtonClick(event: Event) {
+        console.log(event);
         this.isButtonClicked = true;
         this.serverCreateStatus = ' is created';
     }
