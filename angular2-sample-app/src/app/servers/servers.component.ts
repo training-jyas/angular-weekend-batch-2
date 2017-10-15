@@ -29,7 +29,7 @@ export class ServersComponent {
         this.serverName = event.target.value;
     }
 
-    onButtonClick() {
+    onButtonClick(event: Event) {
         this.isButtonClicked = true;
         this.serverCreateStatus = ' is created';
     }
