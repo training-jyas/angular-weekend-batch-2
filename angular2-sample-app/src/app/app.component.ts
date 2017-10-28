@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
   //   .red {
   //     color: red;
   //   }
-  // `] 
+  // `]
 })
 export class AppComponent {
   title = 'Demo App';

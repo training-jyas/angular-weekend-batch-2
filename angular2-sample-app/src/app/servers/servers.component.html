@@ -12,6 +12,6 @@
     (click)="onButtonClick($event)"
     >Add Server</button>
 <hr>
-<div *ngIf="isButtonClicked">{{ serverName }}{{ serverCreateStatus }}</div>
-<div *ngIf="!isButtonClicked">No Server Created</div>
+<div *ngIf="serverCreateStatus">{{ serverName }} is created</div>
+<div *ngIf="!serverCreateStatus">No server created</div>
 <app-server *ngFor="let server of servers"></app-server>

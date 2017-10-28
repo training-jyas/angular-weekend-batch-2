@@ -1,4 +1,7 @@
-<p 
+<!-- <p 
     [ngStyle]="{backgroundColor: getColor()}"
     [ngClass]="{bold: status === 'online'}"
+>Server with name {{ name }} is {{ status }}</p> -->
+<p
+[ngClass]="{online: status === 'online', offline: status === 'offline'}"
 >Server with name {{ name }} is {{ status }}</p>
