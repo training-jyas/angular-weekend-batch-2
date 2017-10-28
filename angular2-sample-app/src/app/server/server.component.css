@@ -2,3 +2,14 @@
     font-weight: bold;
     font-style: italic;
 }
+
+.online {
+    font-weight: bold;
+    font-style: italic;
+    background-color: green;
+}
+
+.offline {
+    background-color: yellow;
+}
+

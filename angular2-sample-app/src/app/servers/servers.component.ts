@@ -9,15 +9,13 @@ import { Component } from '@angular/core';
 export class ServersComponent {
     isButtonActive: boolean;
     serverName: string;
-    isButtonClicked: boolean;
-    serverCreateStatus: string;
+    serverCreateStatus: boolean;
     servers: string[];
 
     constructor() {
         this.isButtonActive = false;
-        this.isButtonClicked = false;
         this.serverName = 'Server 1';
-        this.serverCreateStatus = 'no server created';
+        this.serverCreateStatus = false;
         this.servers = ['server 1', 'server 2', 'server 3'];
         setTimeout(() => {
             this.isButtonActive = true;
@@ -30,7 +28,6 @@ export class ServersComponent {
     }
 
     onButtonClick(event: Event) {
-        this.isButtonClicked = true;
-        this.serverCreateStatus = ' is created';
+        this.serverCreateStatus = true;
     }
 }
