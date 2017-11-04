@@ -1,8 +1,12 @@
 <div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-            <p>Welcome to {{ title }}</p>
-        </div>
-    </div>
-    <app-servers></app-servers>
+  <app-server-create (srvAdded)="onServerAdded($event)"></app-server-create>
+  <hr>
+  <app-server-element
+    *ngFor="let serverElement of servers"
+    [srv]="serverElement">
+    <p #paragraph>
+      <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
+      <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
+    </p>
+  </app-server-element>
 </div>
