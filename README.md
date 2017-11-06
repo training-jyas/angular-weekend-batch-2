@@ -13,12 +13,22 @@ Saurav, Pankaj, Sridhar, Ravi, Ambuj
 - [X] Using local references in templates
 - [X] Get access to Template and DOM using @ViewChild
 - [X] Project content into components using `ng-content`
-- [ ] Lifecycle and its details
+- [X] Lifecycle and its details
 - [X] Access to ng-content using @ContentChild
 
 # Project - Components
-- [ ] Introduction
-- [ ] Add navigation, event binding and ngIf
-- [ ] Pass recipe data with property binding
-- [ ] Pass data with event binding
-- [ ] Allow user to add ingredients to shopping list
+- [X] Introduction
+- [X] Add navigation, event binding and ngIf
+- [X] Pass recipe data with property binding
+- [X] Pass data with event binding
+- [X] Allow user to add ingredients to shopping list
+
+# Directives
+- [ ] Introduction - diff b/w structure and non structure
+- [ ] ngFor and ngIf recap
+- [ ] ngClass and ngStyle recap
+- [ ] Create a basic attribute directive
+- [ ] Using renderer to build better attribute directive
+- [ ] Using HostListener to listen to host events
+- [ ] Using HostBinding to bind to host properties
+- [ ] Binding to directive properties
