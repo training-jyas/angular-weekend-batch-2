@@ -1,5 +1,5 @@
 # angular-weekend-batch-2
-Saurav, Pankaj, Sridhar, Ravi, Ambuj
+Saurav, Pankaj, Sridhar, Ravi, Ambuj, Kiran
 
 # Components
 - [X] Module introduction
@@ -24,11 +24,18 @@ Saurav, Pankaj, Sridhar, Ravi, Ambuj
 - [X] Allow user to add ingredients to shopping list
 
 # Directives
-- [ ] Introduction - diff b/w structure and non structure
-- [ ] ngFor and ngIf recap
-- [ ] ngClass and ngStyle recap
-- [ ] Create a basic attribute directive
-- [ ] Using renderer to build better attribute directive
+- [X] Introduction - diff b/w structure and non structure
+- [X] ngFor and ngIf recap
+- [X] ngClass and ngStyle recap
+- [X] Create a basic attribute directive
+- [X] Using renderer to build better attribute directive
 - [ ] Using HostListener to listen to host events
 - [ ] Using HostBinding to bind to host properties
 - [ ] Binding to directive properties
+
+# Project - Directives
+- [ ] Make the dropdown work using a directive
+
+# Services
+# Routing
+# Http

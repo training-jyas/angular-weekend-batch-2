@@ -1,0 +1,11 @@
+<button class="btn btn-primary" (click)="toggle()">Toggle</button>
+<div class="list-group">
+  <div 
+      class="list-group-item"
+      *ngFor="let n of numbers"
+      [ngClass]="{even: showEven === true, odd: showEven !== true}">
+    <span [ngStyle]="{fontWeight: showEven === true ? 'bold' : 'normal'}">{{ n }}</span>
+  </div>
+</div>
+<p appBasicHighlight>basic hightlight directive</p>
+<p appBetterHighlight>better hightlight directive</p>

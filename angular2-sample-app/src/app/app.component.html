@@ -1,12 +1,5 @@
 <div class="container">
-  <app-server-create (srvAdded)="onServerAdded($event)"></app-server-create>
-  <hr>
-  <app-server-element
-    *ngFor="let serverElement of servers"
-    [srv]="serverElement">
-    <p #paragraph>
-      <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
-      <em *ngIf="serverElement.type === 'blueprint'">{{ serverElement.content }}</em>
-    </p>
-  </app-server-element>
+  <app-header (featureSelected)="loadFeature($event)"></app-header>
+  <app-components *ngIf="featureSelected === 'components'"></app-components>
+  <app-directives *ngIf="featureSelected === 'directives'"></app-directives>
 </div>
