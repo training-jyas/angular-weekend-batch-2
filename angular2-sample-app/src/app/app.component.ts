@@ -7,9 +7,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  servers = [];
+  featureSelected = 'directives';
 
-  onServerAdded(server) {
-    this.servers.push(server);
+  loadFeature(feature) {
+    this.featureSelected = feature;
   }
 }
