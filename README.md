@@ -29,13 +29,22 @@ Saurav, Pankaj, Sridhar, Ravi, Ambuj, Kiran
 - [X] ngClass and ngStyle recap
 - [X] Create a basic attribute directive
 - [X] Using renderer to build better attribute directive
-- [ ] Using HostListener to listen to host events
-- [ ] Using HostBinding to bind to host properties
-- [ ] Binding to directive properties
+- [X] Using HostListener to listen to host events
+- [X] Using HostBinding to bind to host properties
+- [X] Binding to directive properties
+- [X] ngSwitch
 
 # Project - Directives
-- [ ] Make the dropdown work using a directive
+- [X] Make the dropdown work using a directive
 
-# Services
+# Project - Services
+- [ ] Add service files
+- [ ] Manage recipes in a recipe service
+- [ ] Cross component communication to select recipe
+- [ ] Add shopping list service
+- [ ] Reactive service informing ingredient changes
+- [ ] Add ingredients to recipe
+- [ ] Pass ingredients from recipe
+
 # Routing
 # Http

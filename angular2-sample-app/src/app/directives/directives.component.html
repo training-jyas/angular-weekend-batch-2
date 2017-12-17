@@ -1,11 +1,17 @@
 <button class="btn btn-primary" (click)="toggle()">Toggle</button>
 <div class="list-group">
-  <div 
-      class="list-group-item"
-      *ngFor="let n of numbers"
-      [ngClass]="{even: showEven === true, odd: showEven !== true}">
+  <div class="list-group-item" *ngFor="let n of numbers" [ngClass]="{even: showEven === true, odd: showEven !== true}">
     <span [ngStyle]="{fontWeight: showEven === true ? 'bold' : 'normal'}">{{ n }}</span>
   </div>
 </div>
 <p appBasicHighlight>basic hightlight directive</p>
-<p appBetterHighlight>better hightlight directive</p>
+<!-- <p appBetterHighlight [defaultColor]="'yellow'" [backgroundColor]="'red'">better hightlight directive</p> -->
+<!-- <p [appBetterHighlight]="'yellow'" [backgroundColor]="'red'">better hightlight directive</p> -->
+<p [appBetterHighlight]="highlightColors">better hightlight directive</p>
+
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="3">value is 3</p>
+  <p *ngSwitchCase="4">value is 4</p>
+  <p *ngSwitchCase="5">value is 5</p>
+  <p *ngSwitchDefault>value is default</p>
+</div>
