@@ -46,5 +46,54 @@ Saurav, Pankaj, Sridhar, Ravi, Ambuj, Kiran
 - [ ] Add ingredients to recipe
 - [ ] Pass ingredients from recipe
 
+# Forms
+- [ ] Introduction to Template driven forms
+- [ ] Creating the form and registering the controls
+- [ ] Submitting and using the form
+- [ ] Understanding form state
+- [ ] Acces the Form with @ViewChild
+- [ ] Adding validation to check user input
+- [ ] Built-in validators and using HTML5 validation
+- [ ] Using the Form state
+- [ ] Outputting Validation error messages
+- [ ] Set default values with ngModel binding
+- [ ] Handling Radio buttons
+- [ ] Setting and Patching form values
+- [ ] Using form data
+- [ ] Resetting the form
+
+# Project - Forms
+- [ ] Adding the shopping list form
+- [ ] Adding validation to the form
+- [ ] Adding the edit recipe form
+- [ ] Adding the new recipe form
+- [ ] Making all the forms functional
+
+# Pipes
+- [ ] Why pipes ?
+- [ ] Using pipes
+- [ ] Parameterizing pipes
+- [ ] Chaining multiple pipes
+- [ ] Create a custom pipe
+- [ ] Parameterizing a custom pipe
+- [ ] Create a filter pipe
+- [ ] Understand `async` pipe
+
 # Routing
+- [ ] Why routes ?
+- [ ] Setting up Routes.
+- [ ] Addign navigation to the app
+- [ ] Marking active routes
+- [ ] Fixing page reload issues
+- [ ] Addig child routes
+- [ ] Configure route parameters
+- [ ] Styling active recipe item
+- [ ] Adding edit route and recieve route parameters
+- [ ] Programmatic navigation to the edit page
+
 # Http
+- [ ] Understanding the Http module
+- [ ] Get Request
+- [ ] Put Request
+- [ ] Delete Request
+- [ ] Post Request
