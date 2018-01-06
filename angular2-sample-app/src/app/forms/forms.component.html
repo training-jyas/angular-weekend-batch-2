@@ -1,0 +1,57 @@
+<form (ngSubmit)="submitForm(userform)" #userform="ngForm">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" class="form-control" ngModel #name="ngModel" required>
+    <span class="help-text" *ngIf="name.dirty && name.invalid">
+      <span *ngIf="name.errors.required">Please enter the name</span>
+    </span>
+  </div>
+  <div class="form-group">
+    <label>Username</label>
+    <input type="text" name="username" class="form-control" ngModel required>
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" name="password" class="form-control" ngModel>
+  </div>
+  <div class="form-group">
+    <label>Retype Password</label>
+    <input type="password" name="retypepassword" class="form-control" ngModel>
+  </div>
+  <div class="form-group">
+    <label>Phone</label>
+    <input type="number" name="phone" class="form-control" ngModel>
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" name="email" class="form-control" ngModel>
+  </div>
+  <div class="form-group">
+    <label>City</label>
+    <select class="form-control" name="city" ngModel>
+      <option value="">Select City</option>
+      <option value="bengaluru">Bengaluru</option>
+      <option value="Mumbai">Mumbai</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Address</label>
+    <textarea cols="30" rows="3" class="form-control" name="address" ngModel></textarea>
+  </div>
+  <div class="form-group">
+    <label>Gender</label>
+    <div class="radio">
+      <label><input type="radio" name="gender" value="male" ngModel> Male </label>
+      <label><input type="radio" name="gender" value="Female" ngModel> Female </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Hobbies</label>
+    <div class="checkbox">
+      <label><input type="checkbox" name="hobbies" value="writing" ngModel> Writing </label>
+      <label><input type="checkbox" name="hobbies" value="reading" ngModel> Reading </label>
+      <label><input type="checkbox" name="hobbies" value="singing" ngModel> Singing </label>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit" [disabled]="userform.invalid">Submit</button>
+</form>

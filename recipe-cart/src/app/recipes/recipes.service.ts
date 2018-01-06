@@ -26,6 +26,10 @@ export class RecipesService {
     console.log(this.slService);
   }
 
+  getRecipe(index: number) {
+    return this.recipes.slice()[index];
+  }
+
   getRecipes() {
     return this.recipes.slice();
   }
