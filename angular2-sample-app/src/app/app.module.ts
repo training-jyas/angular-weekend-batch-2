@@ -11,6 +11,7 @@ import { ComponentsComponent } from './components/components.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { BasicHighlightDirective } from './directives/basic-highlight.directive';
 import { BetterHighlightDirective } from './directives/better-highlight.directive';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BetterHighlightDirective } from './directives/better-highlight.directiv
     ComponentsComponent,
     DirectivesComponent,
     BasicHighlightDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

@@ -2,4 +2,5 @@
   <app-header (featureSelected)="loadFeature($event)"></app-header>
   <app-components *ngIf="featureSelected === 'components'"></app-components>
   <app-directives *ngIf="featureSelected === 'directives'"></app-directives>
+  <app-forms *ngIf="featureSelected === 'forms'"></app-forms>
 </div>

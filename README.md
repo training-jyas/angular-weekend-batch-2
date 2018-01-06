@@ -38,16 +38,28 @@ Saurav, Pankaj, Sridhar, Ravi, Ambuj, Kiran
 - [X] Make the dropdown work using a directive
 
 # Project - Services
-- [ ] Add service files
-- [ ] Manage recipes in a recipe service
-- [ ] Cross component communication to select recipe
-- [ ] Add shopping list service
-- [ ] Reactive service informing ingredient changes
-- [ ] Add ingredients to recipe
-- [ ] Pass ingredients from recipe
+- [X] Add service files
+- [X] Manage recipes in a recipe service
+- [X] Cross component communication to select recipe
+- [X] Add shopping list service
+- [X] Reactive service informing ingredient changes
+- [X] Add ingredients to recipe
+- [X] Pass ingredients from recipe
+
+# Routing
+- [X] Why routes ?
+- [X] Setting up Routes.
+- [X] Adding navigation to the app
+- [X] Marking active routes
+- [X] Fixing page reload issues
+- [X] Addig child routes
+- [X] Configure route parameters
+- [X] Styling active recipe item
+- [X] Adding edit route and recieve route parameters
+- [X] Programmatic navigation to the edit page
 
 # Forms
-- [ ] Introduction to Template driven forms
+- [X] Introduction to Template driven forms
 - [ ] Creating the form and registering the controls
 - [ ] Submitting and using the form
 - [ ] Understanding form state
@@ -78,18 +90,6 @@ Saurav, Pankaj, Sridhar, Ravi, Ambuj, Kiran
 - [ ] Parameterizing a custom pipe
 - [ ] Create a filter pipe
 - [ ] Understand `async` pipe
-
-# Routing
-- [ ] Why routes ?
-- [ ] Setting up Routes.
-- [ ] Addign navigation to the app
-- [ ] Marking active routes
-- [ ] Fixing page reload issues
-- [ ] Addig child routes
-- [ ] Configure route parameters
-- [ ] Styling active recipe item
-- [ ] Adding edit route and recieve route parameters
-- [ ] Programmatic navigation to the edit page
 
 # Http
 - [ ] Understanding the Http module
