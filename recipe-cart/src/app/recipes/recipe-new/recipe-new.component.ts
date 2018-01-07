@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { NgForm } from '@angular/forms';
+import { RecipesService } from '../recipes.service';
+import { Recipe } from '../recipe.model';
 
 @Component({
   selector: 'app-recipe-new',
@@ -7,7 +10,9 @@ import { ActivatedRoute, Params } from '@angular/router';
   styleUrls: ['./recipe-new.component.css']
 })
 export class RecipeNewComponent implements OnInit {
-  constructor(private route: ActivatedRoute) {}
+  @ViewChild('recipeForm') recipeForm: NgForm;
+  constructor(private route: ActivatedRoute,
+    private recipeService: RecipesService) {}
 
   ngOnInit() {
     this.route.params
@@ -18,5 +23,10 @@ export class RecipeNewComponent implements OnInit {
           console.log('new recipe logic');
         }
       });
+  }
+
+  addRecipe() {
+    console.log(this.recipeForm.value);
+    this.recipeService.addRecipe(<Recipe>this.recipeForm.value);
   }
 }
