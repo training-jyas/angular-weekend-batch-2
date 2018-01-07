@@ -1,6 +1,26 @@
 # angular-weekend-batch-2
 Saurav, Pankaj, Sridhar, Ravi, Ambuj, Kiran
 
+# Basics
+- [ ] Introduction to Angular
+- [ ] How a angular app loads
+- [ ] What is a component and how to create it
+- [ ] Understanding the role of App Module and component declaration
+- [ ] Creating components with CLI and nesting them
+- [ ] Component templates and styles
+- [ ] Component selector
+- [ ] What is databinding
+- [ ] String interpolation
+- [ ] Property binding
+- [ ] Event binding
+- [ ] Passing and using data with event binding
+- [ ] Two way data binding and why FormsModule ?
+- [ ] Understanding directives
+- [ ] Using ngIf with else condition
+- [ ] Styling elements with ngStyle
+- [ ] Applying classes with ngClass
+- [ ] Using ngFor to work with lists
+
 # Components
 - [X] Module introduction
 - [X] Splitting Apps into components
@@ -60,19 +80,19 @@ Saurav, Pankaj, Sridhar, Ravi, Ambuj, Kiran
 
 # Forms
 - [X] Introduction to Template driven forms
-- [ ] Creating the form and registering the controls
-- [ ] Submitting and using the form
-- [ ] Understanding form state
-- [ ] Acces the Form with @ViewChild
-- [ ] Adding validation to check user input
-- [ ] Built-in validators and using HTML5 validation
-- [ ] Using the Form state
-- [ ] Outputting Validation error messages
-- [ ] Set default values with ngModel binding
-- [ ] Handling Radio buttons
-- [ ] Setting and Patching form values
-- [ ] Using form data
-- [ ] Resetting the form
+- [X] Creating the form and registering the controls
+- [X] Submitting and using the form
+- [X] Understanding form state
+- [X] Acces the Form with @ViewChild
+- [X] Adding validation to check user input
+- [X] Built-in validators and using HTML5 validation
+- [X] Using the Form state
+- [X] Outputting Validation error messages
+- [X] Set default values with ngModel binding
+- [X] Handling Radio buttons
+- [X] Setting and Patching form values
+- [X] Using form data
+- [X] Resetting the form
 
 # Project - Forms
 - [ ] Adding the shopping list form

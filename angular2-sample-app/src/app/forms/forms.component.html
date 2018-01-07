@@ -1,14 +1,14 @@
 <form (ngSubmit)="submitForm(userform)" #userform="ngForm">
   <div class="form-group">
     <label>Name</label>
-    <input type="text" name="name" class="form-control" ngModel #name="ngModel" required>
+    <input type="text" name="name" class="form-control" [ngModel]="user.name" #name="ngModel" placeholder="Enter name"required>
     <span class="help-text" *ngIf="name.dirty && name.invalid">
       <span *ngIf="name.errors.required">Please enter the name</span>
     </span>
   </div>
   <div class="form-group">
     <label>Username</label>
-    <input type="text" name="username" class="form-control" ngModel required>
+    <input type="text" name="username" class="form-control" ngModel #username="ngModel">
   </div>
   <div class="form-group">
     <label>Password</label>
@@ -20,7 +20,11 @@
   </div>
   <div class="form-group">
     <label>Phone</label>
-    <input type="number" name="phone" class="form-control" ngModel>
+    <input type="number" name="phone" class="form-control" ngModel minlength="5" maxlength="10" #phone="ngModel" required>
+    <span class="help-text" *ngIf="phone.dirty && phone.invalid">
+      <span *ngIf="phone.errors.required">Phone is required</span>
+      <span *ngIf="phone.errors.maxlength">Max length is 10</span>
+    </span>
   </div>
   <div class="form-group">
     <label>Email</label>
@@ -30,8 +34,7 @@
     <label>City</label>
     <select class="form-control" name="city" ngModel>
       <option value="">Select City</option>
-      <option value="bengaluru">Bengaluru</option>
-      <option value="Mumbai">Mumbai</option>
+      <option [value]="city" *ngFor="let city of cities">{{ city }}</option>
     </select>
   </div>
   <div class="form-group">
@@ -48,10 +51,11 @@
   <div class="form-group">
     <label>Hobbies</label>
     <div class="checkbox">
-      <label><input type="checkbox" name="hobbies" value="writing" ngModel> Writing </label>
-      <label><input type="checkbox" name="hobbies" value="reading" ngModel> Reading </label>
-      <label><input type="checkbox" name="hobbies" value="singing" ngModel> Singing </label>
+      <label><input type="checkbox" name="writing" value="writing" ngModel> Writing </label>
+      <label><input type="checkbox" name="reading" value="reading" ngModel> Reading </label>
+      <label><input type="checkbox" name="singing" value="singing" ngModel> Singing </label>
     </div>
   </div>
   <button class="btn btn-primary" type="submit" [disabled]="userform.invalid">Submit</button>
+  <button class="btn btn-default" (click)="resetForm()">Reset</button>
 </form>

@@ -1,0 +1,6 @@
+form.ng-dirty.ng-invalid .help-text, form.ng-invalid .help-text{
+    color: red;
+}
+.form-control.ng-dirty.ng-invalid {
+    border: 1px solid red;
+}
