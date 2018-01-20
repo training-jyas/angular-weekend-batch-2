@@ -2,24 +2,24 @@
 Saurav, Pankaj, Sridhar, Ravi, Ambuj, Kiran
 
 # Basics
-- [ ] Introduction to Angular
-- [ ] How a angular app loads
-- [ ] What is a component and how to create it
-- [ ] Understanding the role of App Module and component declaration
-- [ ] Creating components with CLI and nesting them
-- [ ] Component templates and styles
-- [ ] Component selector
-- [ ] What is databinding
-- [ ] String interpolation
-- [ ] Property binding
-- [ ] Event binding
-- [ ] Passing and using data with event binding
-- [ ] Two way data binding and why FormsModule ?
-- [ ] Understanding directives
-- [ ] Using ngIf with else condition
-- [ ] Styling elements with ngStyle
-- [ ] Applying classes with ngClass
-- [ ] Using ngFor to work with lists
+- [X] Introduction to Angular
+- [X] How a angular app loads
+- [X] What is a component and how to create it
+- [X] Understanding the role of App Module and component declaration
+- [X] Creating components with CLI and nesting them
+- [X] Component templates and styles
+- [X] Component selector
+- [X] What is databinding
+- [X] String interpolation
+- [X] Property binding
+- [X] Event binding
+- [X] Passing and using data with event binding
+- [X] Two way data binding and why FormsModule ?
+- [X] Understanding directives
+- [X] Using ngIf with else condition
+- [X] Styling elements with ngStyle
+- [X] Applying classes with ngClass
+- [X] Using ngFor to work with lists
 
 # Components
 - [X] Module introduction
@@ -95,11 +95,11 @@ Saurav, Pankaj, Sridhar, Ravi, Ambuj, Kiran
 - [X] Resetting the form
 
 # Project - Forms
-- [ ] Adding the shopping list form
-- [ ] Adding validation to the form
-- [ ] Adding the edit recipe form
-- [ ] Adding the new recipe form
-- [ ] Making all the forms functional
+- [X] Adding the shopping list form
+- [X] Adding validation to the form
+- [X] Adding the edit recipe form
+- [X] Adding the new recipe form
+- [X] Making all the forms functional
 
 # Pipes
 - [ ] Why pipes ?
