@@ -1,0 +1,14 @@
+<div class="list-group">
+  <div class="list-group-item" *ngFor="let user of users;let i = index">
+    <span>#{{ i }}</span> |
+    <span>{{ user.name | titlecase }}</span> |
+    <span>{{ user.doj | date | lowercase }}</span> |
+    <span>{{ user.role | slice:5 | lowercase }}</span>
+  </div>
+</div>
+
+<div>
+  <code>promise|async</code>: 
+  <button (click)="clicked()">{{ arrived ? 'Reset' : 'Resolve' }}</button>
+  <span>Wait for it... {{ greeting | async }}</span>
+</div>

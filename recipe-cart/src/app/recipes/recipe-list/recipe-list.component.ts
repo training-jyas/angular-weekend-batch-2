@@ -1,8 +1,19 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { Router } from '@angular/router';
+import {
+  Component,
+  OnInit,
+  EventEmitter,
+  Output
+} from '@angular/core';
+import {
+  Router
+} from '@angular/router';
 
-import { Recipe } from '../recipe.model';
-import { RecipesService } from '../recipes.service';
+import {
+  Recipe
+} from '../recipe.model';
+import {
+  RecipesService
+} from '../recipes.service';
 
 @Component({
   selector: 'app-recipe-list',
@@ -14,20 +25,22 @@ export class RecipeListComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private recipesService: RecipesService) { }
+    private recipesService: RecipesService) {}
 
   ngOnInit() {
-    this.recipes = this.recipesService.getRecipes();
-    this.recipesService.recipeAdded
-    .subscribe((recipe: Recipe) => {
-      this.recipes.push(recipe);
-      const index = this.recipes.length - 1;
-      this.router.navigate(['recipes', index]);
-    });
+    this.recipesService.getRecipes()
+      .subscribe(
+        (response: Recipe[]) => {
+          this.recipes = response;
+        }, (error) => {
+          console.log('fetch error', error);
+        });
     this.recipesService.recipesUpdated
-    .subscribe((recipes: Recipe[]) => {
-      this.recipes = recipes;
-    });
+      .subscribe((recipes: Recipe[]) => {
+        this.recipes = recipes;
+        console.log(this.recipes);
+        this.router.navigate(['recipes']);
+      });
   }
 
 }

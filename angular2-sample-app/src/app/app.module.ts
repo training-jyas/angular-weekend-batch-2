@@ -12,6 +12,8 @@ import { DirectivesComponent } from './directives/directives.component';
 import { BasicHighlightDirective } from './directives/basic-highlight.directive';
 import { BetterHighlightDirective } from './directives/better-highlight.directive';
 import { FormsComponent } from './forms/forms.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { SlicePipe } from './pipes/slice.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { FormsComponent } from './forms/forms.component';
     DirectivesComponent,
     BasicHighlightDirective,
     BetterHighlightDirective,
-    FormsComponent
+    FormsComponent,
+    PipesComponent,
+    SlicePipe
   ],
   imports: [
     BrowserModule,
