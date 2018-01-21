@@ -10,7 +10,7 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-new.component.css']
 })
 export class RecipeNewComponent implements OnInit {
-  id: number;
+  id: string;
   editMode = false;
   recipeForm: FormGroup;
   ingredients: FormArray;
@@ -25,7 +25,7 @@ export class RecipeNewComponent implements OnInit {
       .subscribe(
         (params: Params) => {
           console.log(params);
-          this.id = +params['id'];
+          this.id = params['id'];
           this.editMode = params['id'] != null;
           this.initForm();
         }

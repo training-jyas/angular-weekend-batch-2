@@ -102,18 +102,18 @@ Saurav, Pankaj, Sridhar, Ravi, Ambuj, Kiran
 - [X] Making all the forms functional
 
 # Pipes
-- [ ] Why pipes ?
-- [ ] Using pipes
-- [ ] Parameterizing pipes
-- [ ] Chaining multiple pipes
-- [ ] Create a custom pipe
-- [ ] Parameterizing a custom pipe
-- [ ] Create a filter pipe
-- [ ] Understand `async` pipe
+- [X] Why pipes ?
+- [X] Using pipes
+- [X] Parameterizing pipes
+- [X] Chaining multiple pipes
+- [X] Create a custom pipe
+- [X] Parameterizing a custom pipe
+- [X] Create a filter pipe
+- [X] Understand `async` pipe
 
 # Http
-- [ ] Understanding the Http module
-- [ ] Get Request
-- [ ] Put Request
-- [ ] Delete Request
-- [ ] Post Request
+- [X] Understanding the Http module
+- [X] Get Request
+- [X] Put Request
+- [X] Delete Request
+- [X] Post Request
